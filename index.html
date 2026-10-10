@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Encuesta ciudadana</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --fondo: #101318;
+      --panel: #191e27;
+      --texto: #f1f3f5;
+      --suave: #b5bdc9;
+      --acento: #9bbcff;
+      --borde: #343d4b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--fondo);
+      color: var(--texto);
+      font-family: system-ui, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 1rem 5%;
+      background: var(--panel);
+      border-bottom: 1px solid var(--borde);
+    }
+
+    .barra, main {
+      width: min(900px, 92%);
+      margin: 0 auto;
+    }
+
+    .barra {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    a {
+      color: var(--acento);
+    }
+
+    main {
+      padding: 2rem 0;
+    }
+
+    section {
+      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+      background: var(--panel);
+      border: 1px solid var(--borde);
+      border-radius: 14px;
+    }
+
+    p {
+      color: var(--suave);
+    }
+
+    .formulario {
+      overflow: hidden;
+      border-radius: 10px;
+      background: var(--panel);
+    }
+
+    .formulario iframe {
+      display: block;
+      width: 100%;
+      min-height: 1100px;
+      border: 0;
+    }
+
+    footer {
+      padding: 1.5rem;
+      color: var(--suave);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="barra">
+      <strong>Encuesta ciudadana</strong>
+      <nav aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#encuesta">Encuesta</a>
+        <a href="#acerca">Acerca de</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h1>Tu opinión cuenta</h1>
+      <p>
+        Participa en esta encuesta sobre la gestión presidencial.
+        Las preguntas buscan recoger opiniones de manera neutral.
+      </p>
+      <a href="#encuesta">Ir a la encuesta ↓</a>
+    </section>
+
+    <section id="encuesta">
+      <h2>Encuesta sobre la gestión presidencial</h2>
+      <div class="formulario">
+        <!-- Reemplaza este iframe por el código de inserción de Google Forms -->
+        <iframe
+          src="PEGA_AQUI_EL_ENLACE_DE_INSERTAR_DE_TU_GOOGLE_FORM"
+          title="Encuesta sobre la gestión presidencial"
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+    <section id="acerca">
+      <h2>Acerca de esta encuesta</h2>
+      <p>
+        Las respuestas se envían al formulario de Google asociado.
+        Personaliza los colores del formulario desde Google Forms para
+        que armonicen con esta página oscura.
+      </p>
+    </section>
+  </main>
+
+  <footer>Encuesta ciudadana</footer>
+</body>
+</html>
